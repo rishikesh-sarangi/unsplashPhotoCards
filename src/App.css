@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Ysabeau+Infant&display=swap");
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.error-message {
+  font-size: 20px;
+  color: rgb(230, 127, 127);
+  text-transform: capitalize;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 4em; */
+}
+
+.photo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container img {
+  max-width: 35rem;
+  max-height: 19.6875rem;
+  border: 4px dotted rgb(122, 68, 121);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.container p {
+  /* height: 50px; */
+  font-family: "Ysabeau Infant", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  overflow-wrap: break-word;
+  font-size: 24px;
+}
+
+.desc {
+  font-family: "Pangolin", cursive !important;
+  animation: changeColor 5s infinite;
+}
+
+.new-photos {
+  margin-bottom: 20px;
+  background-color: #ea4c89;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px;
+}
+
+.new-photos:hover,
+.new-photos:focus {
+  background-color: #f082ac;
+  transition: 0.5s;
+}
+
+.foot {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  text-align: center;
+  margin-top: 30px;
+  border: 1px dotted rgba(148, 187, 233, 1);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+@keyframes changeColor {
+  0% {
+    color: aquamarine;
+  }
+  25% {
+    color: magenta;
+  }
+  50% {
+    color: orangered;
+  }
+  75% {
+    color: seagreen;
+  }
+  100% {
+    color: aquamarine;
+  }
+}
+
+.text-color-animation {
+  font-family: "Pangolin", cursive;
+  font-size: 18px;
+  animation: changeColor 5s infinite;
+  text-decoration: none;
+  font-weight: 800;
+}
+.text-color-animation:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container img {
+    max-width: 100%;
+  }
+
+  .container p {
+    font-size: 20px;
+  }
+}
